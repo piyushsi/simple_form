@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(174, 80, 194);
+}
+
+.box {
+    height: 80vh;
+    width: 80vw;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+    display: flex;
+}
+
+.box_img {
+    width: 50%;
+    background-image: url(./assets/image/back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 300px;
+}
+
+.box_content {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.box_content input {
+    outline: none;
+    margin-top: .5rem;
+    background-color: #E7E7E6;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 40px;
+    border: none;
+}
+
+.input_email {
+    text-indent: 60px;
+    background: url('./assets/image/email.png') no-repeat;
+    background-size: 30px 30px;
+    background-position: left 30px top 8px;
+}
+
+.input_password {
+    text-indent: 60px;
+    background: url('./assets/image/password.png') no-repeat;
+    background-size: 35px 35px;
+    background-position: left 26px top 5px;
+}
+
+.box_content button {
+    cursor: pointer;
+    background-color: #56B847;
+    color: #FFFFFF;
+    width: 330px;
+    padding: 1rem;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+}
+
+.box_content p {
+    color: #B59C86;
+    cursor: pointer;
+}
+
+.box_bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 14vh;
+}
+
+.error {
+    color: red !important;
+    cursor: text !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .box_content input {
+        width: 250px;
+    }
+    .box_content button {
+        width: 250px;
+    }
+    .box_img {
+        display: none;
+    }
+}
