@@ -13,16 +13,15 @@ var emailValidation = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2
 form.addEventListener('submit', handleSubmit)
 
 function handleSubmit(event) {
-    errorText = error.innerText;
     event.preventDefault();
     if (!email.value) {
-        errorText = 'Email Required';
+        error.innerText = 'Email Required';
     } else if (!emailValidation.test(email.value)) {
-        errorText = 'Invalid Email';
+        error.innerText = 'Invalid Email';
     } else if (!password.value) {
-        errorText = 'Password Required';
+        error.innerText = 'Password Required';
     } else {
-        errorText = '';
+        error.innerText = '';
         alert('submitted')
     }
 
